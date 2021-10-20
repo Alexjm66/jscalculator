@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link type="text/css" href="main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="heading">
+        <label>Calculator Javascript</label>
+    </div>
+    <div class="container">
+        
+        <form name="form">
+            <div class="display">
+                <input type="text" placeholder="0" name="displayResult" id="input" style="width: 207px; height: 60px;"
+                 /><br></br>
+            </div>
+            <div class="buttons">
+                <div class="btnRow">
+                    <input type="button" name="button7" value="7" style="width: 50px; height: 50px; font-size: large;"
+                    onClick="calcNumbers(button7.value)">
+                    <input type="button" name="button8" value="8" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(button8.value)">
+                    <input type="button" name="button9" value="9" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(button9.value)">
+                    <input type="button" name="addbutton" value="+" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(addbutton.value)">
+                </div>
+                <div class="btnRow"> 
+                    <input type="button" name="button4" value="4" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(button4.value)">
+                    <input type="button" name="button5" value="5" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(button5.value)">
+                    <input type="button" name="button6" value="6" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(button6.value)">
+                    <input type="button" name="subtractbutton" value="-" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(subtractbutton.value)">
+                </div>
+                <div class="btnRow">
+                    <input type="button" name="button1" value="1" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(button1.value)">
+                    <input type="button" name="button2" value="2" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(button2.value)">
+                    <input type="button" name="button3" value="3" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(button3.value)">
+                    <input type="button" name="multiplybutton" value="*" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(multiplybutton.value)">
+                </div>
+                <div class="btnRow">
+                    <input type="button" name="dividebutton" value="/" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(dividebutton.value)">
+                    <input type="button" name="dotbutton" value="." style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(dotbutton.value)">
+                    <input type="button" name="button0" value="0" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="calcNumbers(button0.value)">
+                    <input type="button" name="red" value="=" style="width: 50px; height: 50px;font-size: large;"
+                    onClick="displayResult.value=eval(displayResult.value)">
+                </div>
+                <div class="clear">
+                    <input type="button" name="clearbtn" value="C"
+                    style="width: 100px; height: 50px; background-color: red;"
+                    onClick="clear().value">
+                </div>
+            </div>
+        </form>
+       
+    </div>
+    
+</body>
+</html>
